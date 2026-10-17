@@ -10,7 +10,7 @@
 // `./play.sh`, or `pleamar --no-hud --scene fowl.plm` (pleamar 0.4.14 or newer).
 language 0.4
 scene Fowl {
-    surface { size: 768, 720; kind: window; title: "Fowl Play"; rate: 60; keyboard: on_demand }
+    surface { size: 768, 720; kind: window; title: "Fowl Play"; rate: 60, 10 while screen == 0 or paused; keyboard: on_demand }
     permissions { services: "sound", "gamepad", "files", "files.write" }
 
     font file "fonts/PressStart2P-Regular.ttf"
